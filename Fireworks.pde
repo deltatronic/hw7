@@ -86,21 +86,16 @@ class FlickeringStar {
     }
   }
 
-
-  void draw() {
+ void draw() {
     final float[] o = {1, 0, 0, 1, -1, 0, 0, -1};
     stroke(c);
     fill(c);
     beginShape();
-    vertex(x+o[0]*r, y+o[1]*r); // 
+    vertex(x+o[0]*r, y+o[1]*r);
     bezierVertex(x+o[0]*r*e, y+o[1]*r*e, x+o[2]*r*e, y+o[3]*r*e, x+o[2]*r, y+o[3]*r);
-    bezierVertex(x+o[1]*r*e, y+o[2]*r*e, x+o[3]*r*e, y+o[4]*r*e, x+o[3]*r, y+o[4]*r);
     bezierVertex(x+o[2]*r*e, y+o[3]*r*e, x+o[4]*r*e, y+o[5]*r*e, x+o[4]*r, y+o[5]*r);
-    bezierVertex(x+o[3]*r*e, y+o[4]*r*e, x+o[5]*r*e, y+o[6]*r*e, x+o[5]*r, y+o[6]*r);
     bezierVertex(x+o[4]*r*e, y+o[5]*r*e, x+o[6]*r*e, y+o[7]*r*e, x+o[6]*r, y+o[7]*r);
-    bezierVertex(x+o[5]*r*e, y+o[6]*r*e, x+o[7]*r*e, y+o[0]*r*e, x+o[7]*r, y+o[0]*r);
     bezierVertex(x+o[6]*r*e, y+o[7]*r*e, x+o[0]*r*e, y+o[1]*r*e, x+o[0]*r, y+o[1]*r);
-
     endShape();
   }
 
