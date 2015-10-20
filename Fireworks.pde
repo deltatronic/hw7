@@ -92,7 +92,7 @@ class FlickeringStar {
     stroke(c);
     fill(c);
     beginShape();
-    vertex(x+o[0]*r, y+o[1]*r); // only managed to do a 6 pointed star
+    vertex(x+o[0]*r, y+o[1]*r); // 
     bezierVertex(x+o[0]*r*e, y+o[1]*r*e, x+o[2]*r*e, y+o[3]*r*e, x+o[2]*r, y+o[3]*r);
     bezierVertex(x+o[1]*r*e, y+o[2]*r*e, x+o[3]*r*e, y+o[4]*r*e, x+o[3]*r, y+o[4]*r);
     bezierVertex(x+o[2]*r*e, y+o[3]*r*e, x+o[4]*r*e, y+o[5]*r*e, x+o[4]*r, y+o[5]*r);
